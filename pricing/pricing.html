@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAN DEVELOPERS</title>
+<link href="data:image/png;base64,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" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../hybrid/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link href="../hybrid/Pretty-Footer.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="price.css" rel="stylesheet" type="text/css">
+    <script src="price.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="overlay1"></div>
+    <div id="effect" class="animated zoomIn">
+
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="#"><strong>MIAN DESIGNER</strong></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="../index.html"><strong>HOME </strong></a></li>
+                    <li role="presentation"><a href="../index.html"><strong>ABOUT US</strong></a></li>
+                    <li role="presentation"><a href="../index.html"><strong>SERVICE </strong></a></li>
+                    <li class="active" role="presentation"><a href="../pricing/pricing.html" onclick="javascript:window.location.reload()"><strong>PRICING </strong></a></li>
+                    <li role="presentation"><a href="../register/register.html"><strong>REGISTER NOW</strong></a></li>
+                    <li role="presentation"><a href="../contact/contact.html"><strong>CONTACT US</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   
+    <div id="selection">
+        <br />
+
+        <p style="color:#444444;text-align:center">PAKAGES AND OFFERS</p>
+
+        <br />
+
+    </div>
+
+    <br /><br />
+<div id="hide_first">
+    <center><h2 style="color:#4f4f4f;font-weight:lighter">PRICING</h2></center>
+    <center><p style="margin-top:20px;color:#605859">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p></center>
+</div>
+    <br><br><br><br>
+    <div class="container">
+
+        <div class="row">
+
+
+            <div id="r1" class="col-sm-12 col-md-4 col-lg-4">
+
+                <div id="head1">
+
+                    <div id="sub_h1">
+
+                        <center><p>STANDARD</p></center>
+
+                    </div>
+                    <div id="sub_h2">
+
+                        <center><p>$ 9.99<span id="month">&nbsp;&nbsp;&nbsp;/ Per Month</span></p></center>
+
+                    </div>
+                    <br>
+                    <div id="sub_h3">
+
+                        <center><p><b>1</b> Domain</p></center><br>
+                        <center><p><b>20 Gb</b> Storage</p></center><br>
+                        <center><p><b>100 Gb</b> Bandwidth</p></center><br>
+                        <center><p><b>99.9%</b> Uptime</p></center><br>
+                        <center><p><b>24x7</b> Support</p></center><br>
+                        <center><button id="btn1" data-toggle="modal" data-target="#modal1" class="btn btn-default btn-lg">Buy Now</button></center><br>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div id="r1" class="col-sm-12 col-md-4 col-lg-4">
+
+                <div id="head1">
+
+                    <div id="sub_h6">
+
+                        <center><p>SILVER</p></center>
+
+                    </div>
+                    <div id="sub_h2">
+
+                        <center><p>$ 29.99<span id="month">&nbsp;&nbsp;&nbsp;/ Per Month</span></p></center>
+
+                    </div>
+                    <br>
+                    <div id="sub_h3">
+
+                        <center><p><b>5</b> Domain</p></center><br>
+                        <center><p><b>40 Gb</b> Storage</p></center><br>
+                        <center><p><b>200 Gb</b> Bandwidth</p></center><br>
+                        <center><p><b>99.9%</b> Uptime</p></center><br>
+                        <center><p><b>24x7</b> Support</p></center><br>
+                        <center><button id="btn2" data-toggle="modal" data-target="#modal1" class="btn btn-default btn-lg">Buy Now</button></center><br>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div id="r1" class="col-sm-12 col-md-4 col-lg-4">
+
+                <div id="head1">
+
+                    <div id="sub_h7">
+
+                        <center><p>GOLD</p></center>
+
+                    </div>
+                    <div id="sub_h2">
+
+                        <center><p>$ 39.99<span id="month">&nbsp;&nbsp;&nbsp;/ Per Month</span></p></center>
+
+                    </div>
+                    <br>
+                    <div id="sub_h3">
+
+                        <center><p><b>10</b> Domain</p></center><br>
+                        <center><p><b>100 Gb</b> Storage</p></center><br>
+                        <center><p><b>Unlimited Gb</b> Bandwidth</p></center><br>
+                        <center><p><b>99.9%</b> Uptime</p></center><br>
+                        <center><p><b>24x7</b> Support</p></center><br>
+                        <center><button id="btn3" data-toggle="modal" data-target="#modal1" class="btn btn-default btn-lg">Buy Now</button></center><br>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="modal fade" id="modal1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <center><h4>ORDER NOW</h4></center>
+
+                </div>
+                <div class="modal-body">
+
+                    <form id="registry" method="post">
+                        <div class="form-group">
+                            <label for="username">USERNAME:</label>
+                            <input type="text"  class="form-control" id="username" placeholder="Enter User Name" name="username">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">FATHER NAME:</label>
+                            <input type="text" class="form-control"  id="fathername" placeholder="Enter Father Name" name="fname">
+                           
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control"  placeholder="Enter email" name="email">
+                           
+
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                           
+
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="remember"> Remember me</label>
+                            
+
+                        </div>
+                        <center><button type="submit" class="btn btn-primary btn-md">Submit</button></center>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="#" id="head">MIAN DEVELOPERS</a></h3>
+                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                <p class="company-name">MIAN TRADERS© 2015 </p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer-contacts">
+                <div>
+                    <span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">21 Revolution Street</span> Sheikhupura,Pakistan</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +923364049502</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">amirzia105@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var typed2 = new Typed('#head', {
+            strings: ['MIAN DEVELOPERS'],
+            cursorChar: '',
+            typeSpeed: 120,
+            fadeOut: true,
+            loop: true,
+            shuffle: false,
+
+        });
+
+        
+        $(window).ready(function(){
+
+    setTimeout(function() {
+        $('#hide_first').slideDown(1500);
+    },500);
+
+});
+     
+    </script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $.validator.addMethod('strongPassword', function(value, element) {
+        return this.optional(element) 
+          || value.length >= 6
+          && /\d/.test(value)
+          && /[a-z]/i.test(value);
+      }, 'Your password must be at least 6 characters long and contain at least one number and one char\'.')
+      $("#registry").validate({
+        rules: {
+
+            username: {
+                required: true,
+               lettersonly:true,
+                nowhitespace: false,
+                digits:false,
+              },
+              fname: {
+                required: true,
+                lettersonly:true,
+                nowhitespace: false,
+              },
+              email: {
+                required: true,
+                email: true,
+              },
+              pwd: {
+                required: true,
+                strongPassword: true
+              },
+
+              remember: {
+                required: true
+              }
+
+
+
+        },
+
+
+        messages: {
+          email: {
+            required: "<span style='color:red'>Please enter an email address.",
+            email: "<span style='color:red'>Please enter a <em>valid</em> email address.</span>",
+           
+          },
+          remember: {
+                required: "<span style='color:red'>Please Check Your Remember Field</span>"
+              },
+
+              username: {
+                  required:"<span style='color:red'>Please enter an  UserName.",
+                    lettersonly:"<span style='color:red'>Please enter a valid UserName.</span>",
+              },
+              fname: {
+                required:"<span style='color:red'>Please enter an  UserName.",
+                    lettersonly:"<span style='color:red'>Please enter a valid Father Name.</span>",
+              },
+              remember: {
+                required:"<span style='color:red'>Please Check Remember Field.",
+              },
+              pwd:{
+                  required:"<span style='color:red'>Your Password Must Be at Least 6 characters long and contain at least one number and one char.</span>"
+              }
+        }
+
+      });
+
+    window.onbeforeunload = function () {
+        var fathername = document.getElementById('fathername');
+        var email = document.getElementById('email');
+        var password = document.getElementById('pwd');
+        var username = document.getElementById('username');
+        var remember = document.getElementsByName('remember')[0];
+        if (username.value != "" || email.value != "" || password.value != "" || fathername.value != "" || remember.checked) {
+            return "You Cannot Saved your work  ! ";
+        }
+    }
+
+
+
+
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ });
+ 
+ 
+ 
+
+
+
+
+</script>
+
+</body>
+</html>

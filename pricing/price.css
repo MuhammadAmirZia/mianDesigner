@@ -1,0 +1,135 @@
+#hide_first{
+    display:none;
+}
+body {
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+#head1 {
+    border: 1px solid #e4e4e4;
+}
+
+#month {
+    font-size: 15px;
+    color: #8e718e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sub_h1 {
+    height: 70px;
+    background-color: #444444;
+    width: 100%;
+}
+
+#sub_h6 {
+    height: 70px;
+    background-color: #a9cc48;
+    width: 100%;
+}
+
+#sub_h7 {
+    height: 70px;
+    background-color: gold;
+    width: 100%;
+}
+
+
+#sub_h2 {
+    height: 110px;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+    #sub_h2 p {
+        color: #333333;
+        font-size: 50px;
+        line-height: 110px;
+        font-family: 'Archivo Black', sans-serif;
+    }
+
+#sub_h6 p {
+    color: #444444;
+    font-size: 30px;
+    line-height: 70px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#sub_h7 p {
+    color: #444444;
+    font-size: 30px;
+    line-height: 70px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+#sub_h1 p {
+    color: white;
+    font-size: 30px;
+    line-height: 70px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#sub_h3 p {
+    color: #846d9c;
+    font-size: 16px;
+}
+
+
+#sub_h3 b {
+    color: #6d6d6d;
+}
+
+#btn1 {
+    background-color: #444444;
+    color: white;
+}
+
+    #btn1:hover {
+        color: greenyellow;
+        border: 2px solid yellow;
+    }
+
+#btn2 {
+    background-color: #a9cc48;
+    color: #444444;
+}
+
+    #btn2:hover {
+        color: #444444;
+        border: 2px solid orange;
+    }
+
+#btn3 {
+    background-color: gold;
+    color: #444444;
+}
+
+    #btn3:hover {
+        color: #444444;
+        border: 2px solid yellowgreen;
+    }
+
+.modal-body p {
+    color: red;
+    font-size: 11px;
+}
+
+
+#f1, #f2, #f3, #f4, #f5 {
+    display: none;
+}
+
+
+#overlay1 {
+    background-color: #333333;
+    opacity: 0.4;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}

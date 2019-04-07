@@ -1,0 +1,17 @@
+#r1{
+    height: auto;
+    background-color: #a9cc48;
+    box-shadow:1px 1px 2px 1px black;
+}
+
+#r1 h2{
+    color:#4e4b44;
+}
+
+#r1 ul li{
+    list-style: none;
+    color:#4e4b44;
+    float:left;
+    margin:20px;
+    font-size:20px;
+}
